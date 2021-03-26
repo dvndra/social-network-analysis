@@ -85,8 +85,7 @@ column should be predicted cluster label. The absolute value of the labels doesn
 Task: Perform node classification based on learned spectral embedding. A sample train/test split is provided as labels_train.csv/labels_test.csv
 
 Input format:
-```python firstname_lastname_task_4.py <edge_filename> <label_train_filename>
-<label_test_filename> <output_filename>```
+```python firstname_lastname_task_4.py <edge_filename> <label_train_filename> <label_test_filename> <output_filename>```
 
 Params:
 - edge_filename : Path to edge file, e.g.: data/email-Eu-core.txt
