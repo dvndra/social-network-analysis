@@ -36,7 +36,7 @@ Params:
 - gexf_output_file_name: The name of the output gexf file, including file path
 - json_ouutput_file_name: The name of the output JSON file, including file path
 
-## Task 2: Community Detection
+### Task 2: Community Detection
 
 For this task, you will be implementing the CLAN algorithm discussed in class to detect communities on the gamergate dataset (on the same network you created in the previous task). CLAN is a two-step community detection method that uses node attributes to debias previous community detection methods that tend to create too many singleton communities without taking content of the node into consideration. For the first step of CLAN, you will implement an unsupervised community detection method (the Grivan-Newman algorithm). For the second step, you will train a classifier to use node attributes in the graph on the major communities detected by Grivan-Newman and classify non-significant communities into one of those major communities.
 
@@ -63,7 +63,7 @@ Param:
 - taskB_output_file_name: The name and path of the output txt file for task B.
 - taskC_output_file_name: The name and path of the output txt file for task C.
 
-## Task 3 : k-way spectral graph partition on a large graph
+### Task 3 : k-way spectral graph partition on a large graph
 
 Now, let’s apply the spectral graph partition algorithm on some real-world data, for example, a graph of email communication. (https://snap.stanford.edu/data/email-Eu-core.html). The dataset is included in the data folder. It includes two files, email-Eu-core.txt_ contains edge information, each line represents an edge between two nodes. File email-Eu-core-department-labels.txt_ contains node label information, each line specifies the label of a node, 42 labels in total. They are ground truth cluster labels.
 
@@ -80,7 +80,7 @@ Params:
 Output format: Similar to email-Eu-core-department-labels.txt, the second
 column should be predicted cluster label. The absolute value of the labels doesn’t matter.
 
-## Task 4 : Node classification based on spectral embedding
+### Task 4 : Node classification based on spectral embedding
 
 Task: Perform node classification based on learned spectral embedding. A sample train/test split is provided as labels_train.csv/labels_test.csv
 
@@ -96,7 +96,7 @@ Params:
 Output format: Similar to labels_test_truth.csv, the second column should be
 your model’s prediction.
 
-## Task 5: Identify important nodes in a graph via page rank
+### Task 5: Identify important nodes in a graph via page rank
 
 Page rank is initially used to find important webpages, but it generalizes to find important nodes in any type of graph, for example, important persons in an email communication graph. The same hypothesis in page rank could be used in email communication: if a lot of emails are sending to a person, then that person is very likely to be important. Getting an email from an important person makes you more likely to be an important person.
 
